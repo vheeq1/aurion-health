@@ -63,8 +63,15 @@ const fadeUp = {
   hidden: { opacity: 0, y: 24 },
   visible: { opacity: 1, y: 0 },
 };
-
-function SectionTitle({ eyebrow, title, text }) {
+function SectionTitle({
+  eyebrow,
+  title,
+  text,
+}: {
+  eyebrow: string;
+  title: string;
+  text?: string;
+}) {
   return (
     <div className="max-w-2xl">
       <p className="text-sm font-semibold uppercase tracking-[0.25em] text-emerald-700">
